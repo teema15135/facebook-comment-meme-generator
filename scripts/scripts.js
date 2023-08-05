@@ -20,6 +20,14 @@ function takeshotNewTab() {
     })
 }
 
+function renderOuputImage() {
+    takeshot((canvas) => {
+        let outputElement = document.getElementById('output')
+        outputElement.innerHTML = ""
+        outputElement.appendChild(canvas)
+    })
+}
+
 function updateText() {
     let input = getTextInputElement().value
     if (input.trim().length == 0) input = "เพ้อเจ้อ"
@@ -32,6 +40,7 @@ function registerTextInputListener() {
     textInputElement
         .addEventListener("input", (event) => {
             updateText()
+            renderOuputImage()
         })
 }
 
