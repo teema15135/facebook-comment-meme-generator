@@ -1,0 +1,112 @@
+html {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #f0efeb;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 256px;
+}
+
+#app {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#vertical-line {
+    width: 2px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f2f5;
+    flex-grow: 1;
+}
+
+div#comment-container {
+    background-color: #f0f2f5;
+    padding: 8px 12px;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    width: fit-content;
+}
+
+div#fb-name-container>span {
+    font-size: 1rem;
+}
+
+div#main {
+    padding: 16px;
+    width: fit-content;
+    background-color: white;
+}
+
+span#comment-text {
+    font-size: 1.25rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.ml-48 {
+    margin-left: 48px;
+}
+
+.ml-6 {
+    margin-left: 6px;
+}
+
+.ml-n4 {
+    margin-left: -6px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mh-8 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.tc-blue {
+    color: hsl(214, 89%, 52%)
+}
+
+.tc-gray {
+    color: #65676B
+}
+
+.bold {
+    font-weight: 600;
+}

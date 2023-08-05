@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing Shinawatra - เพ้อเจ้อ</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="input-section">
+            <input id="input-comment-text" type="text" placeholder="เพ้อเจ้อ" />
+        </div>
+        <div id="main" class="flex-row mt-16">
+            <div class="flex-col align-center">
+                <img width="34px" height="34px" class="circle" src="images/ing.jpg" />
+                <div id="vertical-line"></div>
+            </div>
+            <div>
+                <div id="comment-container" class="ml-6">
+                    <div id="fb-name-container" class="flex-row bold">
+                        <span id="fb-name">Ing Shinawatra</span>
+                        <span>&nbsp;·&nbsp;</span>
+                        <span class="tc-blue">Follow</span>
+                    </div>
+                    <div>
+                        <span id="comment-text">เพ้อเจ้อ</span>
+                    </div>
+                </div>
+                <div class="flex-row pl-10">
+                    <span class="mh-8 tc-gray">35m</span>
+                    <span class="mh-8 tc-gray bold">Like</span>
+                    <span class="mh-8 tc-gray bold">Reply</span>
+                    <div id="react" class="flex-row ml-48">
+                        <span class="tc-gray">1.3K</span>
+                        <div id="flex-row react-stack" class="ml-6">
+                            <img src="images/like.png" width="18px" height="18px" />
+                            <img class="ml-n4" src="images/laugh.png" width="18px" height="18px" />
+                            <img class="ml-n4" src="images/love.png" width="18px" height="18px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16">
+            <button onclick="takeshotNewTab()">Open Image in New Tab</button>
+            <button class="ml-6" onclick="takeshotSaveImage()">Save Image</button>
+        </div>
+    </div>
+    <script defer>
+        registerTextInputListener()
+        updateText()
+    </script>
+</body>
+
+</html>
