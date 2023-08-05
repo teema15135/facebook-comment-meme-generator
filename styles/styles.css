@@ -7,7 +7,7 @@ html {
 body {
     display: flex;
     justify-content: center;
-    padding-top: 256px;
+    padding-top: 10dvh;
 }
 
 #app {
@@ -32,6 +32,7 @@ div#comment-container {
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
     width: fit-content;
+    max-width: 256px;
 }
 
 div#fb-name-container>span {
@@ -44,8 +45,15 @@ div#main {
     background-color: white;
 }
 
+img#output {
+    max-width: 80dvw;
+}
+
 span#comment-text {
+    display: block;
     font-size: 1.25rem;
+    width: 100%;
+    overflow-wrap: anywhere;
 }
 
 .flex-col {

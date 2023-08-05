@@ -5,9 +5,8 @@ function takeshot(canvasCallback) {
 
 function takeshotSaveImage() {
     takeshot((canvas) => {
-        let dataUrl = canvas.toDataURL("image/png")
         let link = document.createElement('a')
-        link.href = dataUrl
+        link.href = canvas.toDataURL("image/png")
         link.download = "" + Date.now() + ".png"
         link.click()
     })
@@ -15,16 +14,14 @@ function takeshotSaveImage() {
 
 function takeshotNewTab() {
     takeshot((canvas) => {
-        let dataUrl = canvas.toDataURL("image/png")
-        window.open(dataUrl)
+        window.open(canvas.toDataURL("image/png"))
     })
 }
 
 function renderOuputImage() {
     takeshot((canvas) => {
         let outputElement = document.getElementById('output')
-        outputElement.innerHTML = ""
-        outputElement.appendChild(canvas)
+        outputElement.src = canvas.toDataURL("image/png")
     })
 }
 
